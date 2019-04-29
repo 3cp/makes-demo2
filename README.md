@@ -1,6 +1,12 @@
 # makes-demo2
 "makes" skeleton demo, customised questions and feature folders.
 
+```sh
+npx makes huochunpeng/makes-demo2
+# or
+npx makes huochunpeng/makes-demo2 a_project_name
+```
+
 ## Customised questions
 Questions are defined in [`questions.js`](https://github.com/huochunpeng/makes-demo2/blob/master/questions.js)
 (optional), it needs to be in plain commonjs format ("makes" does not support any
