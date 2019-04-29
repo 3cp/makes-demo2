@@ -104,7 +104,7 @@ gulp user, you might be more familiar with `through2` wrapper. The above code is
 same as following `through2` code.
 
 ```js
-const {through2} = require('through2');
+const through2 = require('through2');
 
 exports.append = function(properties, features) {
   return through2.obj(function(file, env, cb) {
