@@ -79,7 +79,7 @@ in files under `common/` and `nodejs/` folders.
     ['nodejs', 'gitattributes', 'babel']
 
 This feature list is used by "makes" to
-1. select targetd feature folders, the above feature list will select folder
+1. select targeted feature folders, the above feature list will select folder
 `common/` and `nodejs/`.
 2. use in condition expression.
  * in questions themself (see the if conditions in questions and question choices).
@@ -104,3 +104,11 @@ All conditional logic in "makes" are handled by same expression engine, you can 
 This only appears when user selected babel or typescript
 // @endif
 ```
+
+### Feature folders
+
+The top level folder `common/`, `nodejs/` and `ruby/` are feature folders, "makes" will choose some of
+them based on user selected features.
+
+Every feature folder supplies a subset of the real project files, whey are merged together to form the
+final project.
