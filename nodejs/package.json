@@ -1,0 +1,39 @@
+{
+  "name": "/* @echo name */",
+  "description": "/* @echo description */",
+  "license": "MIT",
+  "private": true,
+
+  // @if babel || typescript
+  "main": "dist/index.js",
+  // @endif
+
+  // @if !babel && !typescript
+  "main": "index.js",
+  // @endif
+
+  "devDependencies": {
+    // @if babel
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    // @endif
+
+    // @if typescript
+    "typescript": "^3.4.5",
+    // @endif
+  },
+  "scripts": {
+    // @if babel || typescript
+    "prepare": "npm run build",
+    // @endif
+
+    // @if babel
+    "build": "babel -d dist src",
+    // @endif
+
+    // @if typescript
+    "build": "tsc --outDir dist src/index.ts",
+    // @endif
+  }
+}
