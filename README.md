@@ -21,7 +21,7 @@ Optionally, you can also supply a "default" field like `default: 'Default descri
 which will be used as the default answer of this prompt.
 
 "makes" also provides one default text prompt out of the box, prepended to your
-customised questions list. This auto prepend will happen when you did not provide
+customised questions list. This auto prepend only happens when you did not provide
 a question asking for `name: 'name'`.
 
     {
@@ -41,9 +41,9 @@ not change the default value of single-select, it's always default to first choi
 can mark default value for multi-select by setting `selected: true` on the choices.
 
 Select prompt doesn't need a "name" field, answers from all single-select or multi-select
-becomes user selected features. Unlike other prompt tool (inquirer/enquirer/prompts),
+become user selected features. Unlike other prompt tool (inquirer/enquirer/prompts),
 the answers in "makes" selections are unnamed. If user select 'nodejs', 'gitattributes',
-and 'babel' the answers (selected features) are simply
+and 'babel', then the answers (selected features) are simply
 
     ['nodejs', 'gitattributes', 'babel']
 
@@ -92,7 +92,8 @@ All conditional logic in "makes" are handled by same expression engine, you can 
 
 3. in content pre-process
 
-    // @if babel || typescript
-    This only appears when user selected babel or typescript
-    // @endif
-
+```
+// @if babel || typescript
+This only appears when user selected babel or typescript
+// @endif
+```
