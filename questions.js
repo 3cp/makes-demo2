@@ -51,7 +51,7 @@ module.exports = [
     if: 'nodejs',
     message: 'Do you want to use a transpiler?',
     choices: [
-      // first choice has no value, means it would add any value to answers.
+      // first choice has no value, means it wouldn't add any value to answers.
       // hint is an optional field for detailed explanation.
       {title: 'None', hint: 'Write plain commonjs code.'},
       {value: 'babel', title: 'Babel for ESNext', hint: 'Use next generation JavaScript, today.'},
