@@ -1,6 +1,6 @@
 {
   "name": "/* @echo name */",
-  "description": "/* @echo description */",
+  "description": /* @eval JSON.stringify(description) */,
   "license": "MIT",
   "private": true,
 
