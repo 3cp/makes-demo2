@@ -1,14 +1,14 @@
-# makes-demo2
+# demo2
 "makes" skeleton demo, customised questions and feature folders.
 
 ```sh
-npx makes 3cp/makes-demo2
+npx makes makesjs/demo2
 # or
-npx makes 3cp/makes-demo2 a_project_name
+npx makes makesjs/demo2 a_project_name
 ```
 
 ## Customised questions
-Questions are defined in [`questions.js`](https://github.com/3cp/makes-demo2/blob/master/questions.js)
+Questions are defined in [`questions.js`](https://github.com/makesjs/demo2/blob/master/questions.js)
 (optional), it needs to be in plain commonjs format ("makes" does not support any
 kind of transpiling babel/TypeScript).
 
